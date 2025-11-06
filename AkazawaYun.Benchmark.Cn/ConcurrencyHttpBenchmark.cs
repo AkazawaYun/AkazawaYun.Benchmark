@@ -29,6 +29,7 @@ internal class ConcurrencyHttpBenchmark
         akzLog.War("建议使用 Release 模式编译并运行压测工具");
 #endif
         string path = $"{akzWindows.GetBaseDirectory()}req.txt";
+        Console.WriteLine($"从文件读取请求内容: {path}");
         if (File.Exists(path))
             ReqTxt = File.ReadAllText(path);
         else

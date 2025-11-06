@@ -30,6 +30,7 @@ internal class ConcurrencyHttpBenchmark
         akzLog.War("please run benchmark in Release mode.");
 #endif
         string path = $"{akzWindows.GetBaseDirectory()}req.txt";
+        Console.WriteLine($"read request content from file: {path}");
         if (File.Exists(path))
             ReqTxt = File.ReadAllText(path);
         else
