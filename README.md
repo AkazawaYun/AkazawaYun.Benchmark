@@ -18,10 +18,20 @@ Connection: keep-alive
 
 ```
 
+Screenshot:
+
+![screenshot](https://akazawayun.cn/benchmark.png)
+
+
 Warn:
 
 It should check the Content-Length form the http-headers in fact. 
+
 But in order to improve the performance...
-It send two scout-request before the real benchmark, check if the response data is same, and get its length, 
-then use that length to split the tcp-response to each http-response in the real benchmark.
-So all the http-response from your server must be same length for the same request !
+
+It send two scout-request before the real benchmark, check if the two response data is same, and remember one's length, 
+then use that length to split the tcp-response-stream to each http-response in the real benchmark.
+
+So all the http-response from your server must be same length for the SAME request !
+
+Different request do not care this warn.
