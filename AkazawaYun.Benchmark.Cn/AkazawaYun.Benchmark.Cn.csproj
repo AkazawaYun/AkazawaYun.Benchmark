@@ -5,7 +5,16 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PublishAot>true</PublishAot>
+    <PublishAot>false</PublishAot>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>AkazawaYun</Authors>
+    <Company>AkazawaYun</Company>
+    <Copyright>AkazawaYun</Copyright>
+    <Title>AkazawaYun.Benchmark</Title>
+    <Product>AkazawaYun.Benchmark</Product>
+    <RepositoryUrl>https://github.com/AkazawaYun/AkazawaYun.Benchmark</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
